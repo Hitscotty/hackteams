@@ -1,0 +1,1 @@
+SELECT EXISTS(SELECT 1 FROM mysql.user WHERE user = 'test');

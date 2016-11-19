@@ -1,0 +1,2 @@
+URL: hackteams.c6p7kpyzcymg.us-east-1.rds.amazonaws.com
+PORT: 3306

@@ -11,3 +11,18 @@ a {
 .hack-panel{
   text-align: center;
 }
+
+.thumbnail{
+  border-radius: 50%;
+}
+.hack-view{
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

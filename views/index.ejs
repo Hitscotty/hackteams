@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body ng-controller="mlhCtrl">
+    <div class="wrapper">
     <header class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -18,22 +19,31 @@
         </a>
       </div>
     </header>
-
     <section class="col-md-2">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="badge" > 104 </span>
-          Hackathons
+    <div id="fp-nav" class="left" style="color: rgb(0, 0, 0); margin-top: -73.5px;">
+      <ul>
+        <li>
+            <a href="/" class="active">
+                <span>
+                </span>
+            </a>
+            <p>Hackathons</p>
         </li>
-        <li class="list-group-item">
-          <span class="badge" > 3 </span>
-          Teams
-        </li>
-        <li class="list-group-item">
-          Account
-        </li>
-      </ul> 
 
+        <li>
+          <a href="teams">
+            <span>
+            </span>
+          </a>
+        </li>
+          <li>
+            <a href="account">
+              <span>
+              </span>
+            </a>
+          </li>
+          </ul>
+        </div>
     </section>
 
     <section class="col-md-5">
@@ -44,7 +54,7 @@
             <h1> def hacks ()</h1>
             <p> November 19-20 </p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div class="row hack-panel">
@@ -53,13 +63,13 @@
             <h1> def hacks ()</h1>
             <p> November 19-20 </p>
           </div>
-        </div> 
+        </div>
       </div>
 
     </section>
 
     <section class="col-md-5">
-      <div class="container-fluid"> 
+      <div class="container-fluid">
         <div class="row">
           <div class="thumbnail">
             <img class="img-rounded" src="https://img.evbuc.com/https%3A%2F%2Fimg.evbuc.com%2Fhttp%253A%252F%252Fcdn.evbuc.com%252Fimages%252F19635349%252F170214593618%252F1%252Foriginal.jpg%3Frect%3D0%252C0%252C2160%252C1080%26s%3D5c350040278869b0555e23a4ba514f9f?h=200&w=450&s=c1073e6b3b9d05d8645a6d05cca6a87b" alt="...">
@@ -82,5 +92,6 @@
 
     <footer>
     </footer>
+  </div>
   </body>
 </html>

@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("http://news.mlh.io/wp-content/uploads/2015/06/10854892_842655995785080_7818842189759013160_o.jpg");
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.hack-panel{
+  text-align: center;
+}
+
+.thumbnail{
+  border-radius: 50%;
+}
+.hack-view{
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

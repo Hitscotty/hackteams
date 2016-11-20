@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/account.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/hacklogo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <img src="http://cathacks.cs.uky.edu/img/mlhlogo.png" alt="MLH" style="width:221.75px;height:130.125px;">
+    <section class="col-md-5">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Register</h3>
+      </div>
+      <div class="panel-body">
+        <form data-toggle="validator" role="form">
+          <div class="form-group">
+            <label for="inputEmail" class="control-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+            <div class="help-block with-errors"></div>
+          </div>
+        <div class="form-group">
+          <label for="inputUsername" class="control-label">Username</label>
+          <input type="text" class="form-control" id="inputUsername" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+          <label for="inputFirstName" class="control-label">First Name</label>
+          <input type="text" class="form-control" id = "inputFirstName">
+        </div>
+        <div class="form-group">
+          <label for="inputLastName" class="control-label">Last Name</label>
+          <input type="text" class="form-control" id = "inputLastName">
+        </div>
+        <div class="form-group">
+          <label for="inputPhone" class="control-label">Phone Number</label>
+          <input type="text" class="form-control" id = "inputPhone">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="control-label">Password</label>
+          <div class="form-inline row">
+            <div class="form-group col-sm-6">
+              <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+              <div class="help-block">Minimum of 8 characters</div>
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="The passwords you entered do not match. Please try again." placeholder="Confirm" required>
+              <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <a href="login" class="btn btn-info" role="button">Log In</a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>

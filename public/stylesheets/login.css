@@ -1,0 +1,12 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: url("http://www.ichanical.com/wp-content/uploads/2015/04/html-programming.jpg");
+  background-size: contain;
+}

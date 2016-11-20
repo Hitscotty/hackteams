@@ -5,8 +5,14 @@ html{
   padding: 0;
 }
 body {
+  height: 100%;
   padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("http://www.officelovin.com/wp-content/uploads/2015/07/vox-media-nyc-office-2.jpg");
+}
+.wrapper{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 a {
@@ -14,10 +20,6 @@ a {
 }
 
 <<<<<<< HEAD
-.col-md-2{
-  height: 100%;
-  border-right: 1px solid black;
-}
 =======
 
 >>>>>>> f94927e12d264c91d5c60c25618d2f531cd842d5

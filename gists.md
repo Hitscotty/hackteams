@@ -11,3 +11,5 @@
 
 
 [get_user.js](https://gist.github.com/cs-kevinlu/aae0aa15e6ae1edd9366ce23068df312)
+
+[get_user_friends.js](https://gist.github.com/cs-kevinlu/be8f25b16353f5aeb5e66ee84c3128e9)

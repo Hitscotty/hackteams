@@ -7,3 +7,7 @@
 [add_friend.js](https://gist.github.com/cs-kevinlu/10c11d1392d719baf102d1bbc178b0cc)
 
 [get_all_friends.js](https://gist.github.com/cs-kevinlu/0ded0070f85dc2cf739af57516aaae49)
+
+
+
+[get_user.js](https://gist.github.com/cs-kevinlu/aae0aa15e6ae1edd9366ce23068df312)

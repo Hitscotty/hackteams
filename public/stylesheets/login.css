@@ -5,11 +5,12 @@ body{
   height: 100%;
   display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;;
   flex-direction: column;
-  background-image: url("http://www.ichanical.com/wp-content/uploads/2015/04/html-programming.jpg");
-  background-size: contain;
+  background-image: url("http://2.bp.blogspot.com/-DrtwjPJ-plA/UCGMAiZdK2I/AAAAAAAAHIA/d_5d0oJYxAM/s1600/Hudson_Yards_office_New_New_York_Towers_For_Manhattan_world_of_architecture_worldofarchi_05.jpg");
+  background-size: cover;
 }
+
 #fp-nav {
     position: fixed;
     z-index: 100;

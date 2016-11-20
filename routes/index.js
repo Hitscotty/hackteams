@@ -17,18 +17,21 @@ var connection = mysql.createConnection(
 );
 
 function getHackathonList() {
+        var hackathons;
 	connection.connect();
 	connection.query("SELECT * FROM hackathon", function(err, rows, fields) {
 	    if (err) throw err;
 		for (var i in rows) {
-			// do something
-			console.log('Title: ', rows[i]);
+	// do something	
+	hackathons[i] = rows[i];	
+	
 		}
 	});
 	connection.end();
+	return hackathons;
 }
 
-getHackathonList();
+const hacklist = getHackathonList();
 
 
 /* GET home page. */

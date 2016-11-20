@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="defhacks">
   <head>
     <title><%= title %></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="/javascripts/mlh-scraper.js">
     <link rel="shortcut icon" type="image/x-icon" href="/images/hacklogo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <body>
-
+  <body ng-controller="mlhCtrl">
+    {{ example4 }}
     <header class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -21,7 +21,6 @@
     </header>
 
     <section class="col-md-2">
-
       <ul class="list-group">
         <li class="list-group-item">
           <span class="badge" > 104 </span>

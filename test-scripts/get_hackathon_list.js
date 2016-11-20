@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var hackathons = ;
+var hackathons = [];
 // override these with the current user using the website
 var username = 'kevin';
 var password = '12345';
@@ -13,24 +13,26 @@ var connection = mysql.createConnection(
     }
 );
 
+function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function getHackathonList() {
 	connection.connect();
 	connection.query("SELECT * FROM hackathon", function(err, rows, fields) {
 	    if (err) throw err;
-	/*	for (var i = 0; i < rows.length; i++) {
-			// do something
-		//	console.log(rows[i]);
-			hackathons[i] =  rows[i];
-	console.log(hackathons);
-		}*/
 	    hackathons = rows;
 	});
-	connection.end();
+	sleep(5000).then(() => {
+
 	return hackathons;
+	});
 }
+
+
+
 const hacklist = getHackathonList();
-console.log(hacklist);
-console.log("the hack list is: " + hacklist[0]);
+sleep(5000).then(() => console.log(hacklist));
 
 
  

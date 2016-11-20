@@ -13,6 +13,10 @@ a {
   color: #00B7FF;
 }
 
+.col-md-2{
+  height: 100%;
+  border-right: 1px solid black;
+}
 .box{
 
 }

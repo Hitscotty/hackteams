@@ -15,8 +15,8 @@ var connection = mysql.createConnection(
 
 var hackathon = {
 	hackathon_name: 'def hacks()',
-	date_start: 'STR_TO_DATE(\'2016-11-19\', \'%Y-%m-%j\')',
-	date_end: 'STR_TO_DATE(\'2016-11-20\', \'%Y-%m-%j\')',
+	date_start: '2016-11-19',
+	date_end: '2016-11-20',
 	address_local: 'Bronx',
 	address_region: 'NY',
 	hack_url: 'http://defhacks.io',

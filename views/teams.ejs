@@ -2,12 +2,12 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/team.css' />
+    <link rel='stylesheet' href='/stylesheets/teams.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   </head>
   <body class="container-fluid">
-
+    <div class="wrapper">
     <header class="navbar">
       <a class="navbar-brand"> defhacks();</a>
     </header>
@@ -15,23 +15,35 @@
 
 
     <section class="col-md-2">
-
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="badge" > 104 </span>
-          <a href="/" class="btn btn-info" role="button">Hackathons</a>
+    <div id="fp-nav" class="left" style="color: rgb(0, 0, 0); margin-top: -73.5px;">
+      <ul>
+        <li>
+          <a href="/">
+            <span>
+            </span>
+          </a>
         </li>
-        <li class="list-group-item">
-          <span class="badge" > 3 </span>
-          <a href="teams" class="btn btn-info" role="button">Teams</a>
+        <li>
+          <a href="teams" class="active">
+            <span>
+            </span>
+          </a>
         </li>
-        <li class="list-group-item">
-          Account
-        </li>
-      </ul>
-
+          <li>
+            <a href="account">
+              <span>
+              </span>
+            </a>
+          </li>
+            <li>
+              <a href="account"><span></span></a>
+            </li>
+            <li>
+              <a href="#"><span></span></a>
+            </li>
+          </ul>
+        </div>
     </section>
-
     <section class="col-md-4">
 
       <div class="row panel">
@@ -74,5 +86,6 @@
 
     <footer>
     </footer>
+  </div>
   </body>
 </html>

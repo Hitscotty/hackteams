@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var hackathons = [];
+var hackathons = ;
 // override these with the current user using the website
 var username = 'kevin';
 var password = '12345';

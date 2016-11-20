@@ -17,7 +17,7 @@ var connection = mysql.createConnection(
 );
 
 function getHackathonList() {
-        var hackathons;
+        var hackathons = new Array();
 	connection.connect();
 	connection.query("SELECT * FROM hackathon", function(err, rows, fields) {
 	    if (err) throw err;

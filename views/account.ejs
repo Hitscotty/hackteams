@@ -11,77 +11,76 @@
   <body>
     <img src="http://cathacks.cs.uky.edu/img/mlhlogo.png" alt="MLH" style="width:221.75px;height:130.125px;">
     <section class="col-md-2">
-    <div id="fp-nav" class="left" style="color: rgb(0, 0, 0); margin-top: -73.5px;">
-      <ul>
-        <li>
+      <div id="fp-nav" class="left" style="color: rgb(0, 0, 0); margin-top: -73.5px;">
+        <ul>
+          <li>
             <a href="/">
-                <span>
-                </span>
+              <span>
+              </span>
             </a>
-            <p>Hackathons</p>
-        </li>
+          </li>
 
-        <li>
-          <a href="teams">
-            <span>
-            </span>
-          </a>
-        </li>
+          <li>
+            <a href="teams">
+              <span>
+              </span>
+            </a>
+          </li>
           <li>
             <a href="account" class="active">
               <span>
               </span>
             </a>
           </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
     </section>
     <section class="col-md-5">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Profile Information</h3>
-      </div>
-      <div class="panel-body">
-        <form data-toggle="validator" role="form">
-          <div class="form-group">
-            <label for="inputEmail" class="control-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
-            <div class="help-block with-errors"></div>
-          </div>
-        <div class="form-group">
-          <label for="inputUsername" class="control-label">Username</label>
-          <input type="text" class="form-control" id="inputUsername" placeholder="Username" required>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Profile Information</h3>
         </div>
-        <div class="form-group">
-          <label for="inputFirstName" class="control-label">First Name</label>
-          <input type="text" class="form-control" id = "inputFirstName">
-        </div>
-        <div class="form-group">
-          <label for="inputLastName" class="control-label">Last Name</label>
-          <input type="text" class="form-control" id = "inputLastName">
-        </div>
-        <div class="form-group">
-          <label for="inputPhone" class="control-label">Phone Number</label>
-          <input type="text" class="form-control" id = "inputPhone">
-        </div>
-        <div class="form-group">
-          <label for="inputPassword" class="control-label">Password</label>
-          <div class="form-inline row">
-            <div class="form-group col-sm-6">
-              <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-              <div class="help-block">Minimum of 8 characters</div>
-            </div>
-            <div class="form-group col-sm-6">
-              <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="The passwords you entered do not match. Please try again." placeholder="Confirm" required>
+        <div class="panel-body">
+          <form data-toggle="validator" role="form">
+            <div class="form-group">
+              <label for="inputEmail" class="control-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
               <div class="help-block with-errors"></div>
             </div>
+            <div class="form-group">
+              <label for="inputUsername" class="control-label">Username</label>
+              <input type="text" class="form-control" id="inputUsername" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+              <label for="inputFirstName" class="control-label">First Name</label>
+              <input type="text" class="form-control" id = "inputFirstName">
+            </div>
+            <div class="form-group">
+              <label for="inputLastName" class="control-label">Last Name</label>
+              <input type="text" class="form-control" id = "inputLastName">
+            </div>
+            <div class="form-group">
+              <label for="inputPhone" class="control-label">Phone Number</label>
+              <input type="text" class="form-control" id = "inputPhone">
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="control-label">Password</label>
+              <div class="form-inline row">
+                <div class="form-group col-sm-6">
+                  <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                  <div class="help-block">Minimum of 8 characters</div>
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="The passwords you entered do not match. Please try again." placeholder="Confirm" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <a href="login" class="btn btn-info" role="button">Make Changes</a>
+              </div>
+          </form>
+            </div>
         </div>
-        <div class="form-group">
-          <a href="login" class="btn btn-info" role="button">Make Changes</a>
-        </div>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
   </body>
 </html>

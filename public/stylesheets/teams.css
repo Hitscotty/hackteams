@@ -1,40 +1,25 @@
 html{
   height: 100%;
+  margin: 0;
+  top: 0;
+  padding: 0;
 }
 body {
   height: 100%;
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image:url("http://news.mlh.io/wp-content/uploads/2015/06/10854892_842655995785080_7818842189759013160_o.jpg");
+  background-image: url("http://news.mlh.io/wp-content/uploads/2015/06/10854892_842655995785080_7818842189759013160_o.jpg");
   background-size: cover;
+}
+.wrapper{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 a {
   color: #00B7FF;
 }
 
-.wrapper{
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.hack-panel{
-  text-align: center;
-}
-
-.thumbnail{
-  border-radius: 50%;
-}
-.hack-view{
-  display: flex;
-  align-items: center;
-}
-
-.center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .navbar .container-fluid{
   display: flex;
   align-items: center;
@@ -153,4 +138,3 @@ a {
 }
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
-}

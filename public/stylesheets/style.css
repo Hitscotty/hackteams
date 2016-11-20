@@ -9,10 +9,7 @@ body {
   padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("http://www.officelovin.com/wp-content/uploads/2015/07/vox-media-nyc-office-2.jpg");
-<<<<<<< HEAD
   background-size: cover;
-=======
->>>>>>> fa39edec6abce1e5f4529d2188c3d505163d6bb6
 }
 .wrapper{
   height: 100%;
@@ -23,19 +20,6 @@ a {
   color: #00B7FF;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f94927e12d264c91d5c60c25618d2f531cd842d5
-=======
-section{
-  border: 1px red solid;
-}
->>>>>>> c543a3582d3112eb05d8ae64d75a2b3dfc480531
-.box{
-
-}
 .navbar .container-fluid{
   display: flex;
   align-items: center;
@@ -154,4 +138,3 @@ section{
 }
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
-}

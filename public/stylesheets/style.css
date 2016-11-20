@@ -9,6 +9,10 @@ body {
   padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("http://www.officelovin.com/wp-content/uploads/2015/07/vox-media-nyc-office-2.jpg");
+<<<<<<< HEAD
+  background-size: cover;
+=======
+>>>>>>> fa39edec6abce1e5f4529d2188c3d505163d6bb6
 }
 .wrapper{
   height: 100%;

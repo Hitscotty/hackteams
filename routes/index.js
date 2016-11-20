@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var mysql = require('mysql');
-
+var hackathons = [];
 // override these with the current user using the website
 var username = 'kevin';
 var password = '12345';
@@ -17,7 +17,6 @@ var connection = mysql.createConnection(
 );
 
 function getHackathonList() {
-        var hackathons = new Array();
 	connection.connect();
 	connection.query("SELECT * FROM hackathon", function(err, rows, fields) {
 	    if (err) throw err;

@@ -3,20 +3,47 @@ html, body {
   overflow: hidden;
 }
 
-.cont {
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
-.cont h1 {
-  color: #FFF;
+
+.container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.container-fluid h1 {
+  margin: 0.5em auto;
+  color: white;
   text-align: center;
 }
 
 .chatbox {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  width: 600px;
   height: 75%;
   border-radius: 0.2em;
   position: relative;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 }
 .chatbox__messages:nth-of-type(odd) .chatbox__messages__user-message--ind-message {
   float: right;

@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var mysql  = require('mysql');
 var router = express.Router();
 var hackathons ={};
 // override these with the current user using the website
@@ -30,7 +31,6 @@ function getHackathonList() {
 	return hackathons;
 }
 
-const hacklist = getHackathonList();
 
 
 /* GET home page. */

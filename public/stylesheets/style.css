@@ -31,12 +31,12 @@ a{  color: #00B7FF;
 
 .glyhpicon{
   font-size: 70px;
+  cursor: pointer;
 }
 
 
 .glyphicon-chevron-down:hover{
   color: green;
-  cursor: pointer;
 }
 
 .glyphicon-ok:hover{

@@ -1,10 +1,19 @@
 # defhacks
-A Social Media for hackers that lets hackers meet up based on one another's skills and begin working on projects/hackathons.
+A Social Media for hackers that lets you meet up based on one another's skills. This allows you to begin working on projects/hackathons much faster with the right people.
 
-# set up
+![](index.png)
 
-    cd ~/defhacks
-    npm install
-    npm start
+# sample demo 
+Site still being developed on, but you can demo the site here: [hackteams](http://hack-teams.herokuapp.com/teams). 
+![](team.png)
 
-visit localhost:3000
+# contribute 
+1) install [node](https://nodejs.org/en/download/)
+
+2) launch the development server:
+``` bash
+cd ~/defhacks
+npm install
+npm start
+```
+3) visit localhost:3000

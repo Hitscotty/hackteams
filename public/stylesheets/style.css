@@ -31,9 +31,10 @@ a{  color: #00B7FF;
 
 .glyhpicon{
   font-size: 70px;
+}
+.glyphicon:hover{
   cursor: pointer;
 }
-
 
 .glyphicon-chevron-down:hover{
   color: green;
@@ -44,4 +45,8 @@ a{  color: #00B7FF;
 }
 .glyphicon-remove:hover{
   color: red;
+}
+
+.clear-divs{
+  opacity: 0.65;
 }

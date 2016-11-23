@@ -16,4 +16,4 @@ cd ~/defhacks
 npm install
 npm start
 ```
-visit localhost:3000
+3) visit localhost:3000

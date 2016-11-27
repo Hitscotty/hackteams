@@ -6,9 +6,9 @@ var password = '12345';
 
 var connection = mysql.createConnection(
     {
-      host     : 'hackteams.c6p7kpyzcymg.us-east-1.rds.amazonaws.com',
-      user     : username,
-      password : password,
+      host     : 'hackteams.calc7kz37eri.us-east-1.rds.amazonaws.com',
+      user     : scotty,
+      password : 88344e0e,
       database : 'hackteams'
     }
 );

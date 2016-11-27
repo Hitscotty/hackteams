@@ -18,31 +18,23 @@ request(url, function (error, response, body) {
 	var webUrl = $(".event-wrapper a");
 	var logoUrl = $(".event-wrapper img");
 
-	// console.log(hackathons[0].children[0].data);
-	// console.log(startDate.attribs.content);
-	// console.log(endDate.attribs.content);
-	// console.log(addressLocal.children[0].data);
-	// console.log(addressRegion.children[0].data);
-	// console.log(webUrl[0].attribs.href);
-	// console.log(logoUrl[0].attribs.src);
-
 	/* DATABASE INSERT */
 	// override these with the current user using the website
-	var username = 'kevin';
-	var password = '12345';
+	const host = 'hackteams.calc7kz37eri.us-east-1.rds.amazonaws.com';
+	const username = 'scotty';
+	const password = '88344e0e';
+	const database = 'hackteams';
 
-	//console.log(hackathons[3].children[0].data);
 	var connection = mysql.createConnection(
-		{
-		    host     : 'hackteams.c6p7kpyzcymg.us-east-1.rds.amazonaws.com',
-		    user     : username,
-		    password : password,
-		    database : 'hackteams'
-		}
-		);
+	    {
+		host     : host,
+		user     : username,
+		password : password,
+		database : database
+	    }
+	);
 
 	for(var i = 0; i < hackathons.length; i++){
-	    console.log(hackathons[i].children[0].data);
 	    var hackathon = {
 		hackathon_name: hackathons[i].children[0].data,
 		date_start: startDate[i].attribs.content,
@@ -50,17 +42,16 @@ request(url, function (error, response, body) {
 		address_local: addressLocal[i].children[0].data ,
 		address_region: addressRegion[i].children[0].data,
 		hack_url: webUrl[i].attribs.href,
-		img_urL: logoUrl[i].attribs.src
+		img_url: logoUrl[i].attribs.src
 	    }
 
-	    connection.query('INSERT INTO hackathon SET ?', hackathon, function(err, res) {
+	    connection.query('INSERT INTO hackathon SET ? ON DUPLICATE KEY UPDATE ?', [hackathon, hackathon] , function(err, res) {
 		if (err) throw err;
 		console.log('Last insert ID:', res.insertId);
 	    });
 	}
-    } else {
+    }	    else {
 	console.log("We’ve encountered an error: " + error);
     }
-
 
 });
